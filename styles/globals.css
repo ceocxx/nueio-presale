@@ -1,4 +1,4 @@
-/* app/globals.css */
+/* styles/globals.css */
 
 html,
 body {
@@ -16,4 +16,17 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
 }

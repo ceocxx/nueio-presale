@@ -1,16 +1,10 @@
-import Head from 'next/head'
-import styles from '../app/globals.css'
+// app/page.tsx
+import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 
-const Home: React.FC = () => {
+export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>NUEIO Token Pre-Sale</title>
-        <meta name="description" content="Pre-sale website for NUEIO token" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to NUEIO Token Pre-Sale
@@ -24,9 +18,25 @@ const Home: React.FC = () => {
             <a style={{ fontSize: '20px', color: 'blue' }}>Go to Pre-Sale</a>
           </Link>
         </div>
+
+        <div style={{ marginTop: '20px' }}>
+          <Link href="/governance">
+            <a style={{ fontSize: '20px', color: 'blue' }}>Governance</a>
+          </Link>
+        </div>
+
+        <div style={{ marginTop: '20px' }}>
+          <Link href="/vesting">
+            <a style={{ fontSize: '20px', color: 'blue' }}>Vesting</a>
+          </Link>
+        </div>
+
+        <div style={{ marginTop: '20px' }}>
+          <Link href="/staking">
+            <a style={{ fontSize: '20px', color: 'blue' }}>Staking</a>
+          </Link>
+        </div>
       </main>
     </div>
   )
 }
-
-export default Home
